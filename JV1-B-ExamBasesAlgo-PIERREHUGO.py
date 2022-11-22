@@ -12,8 +12,7 @@ print(myTable)
 
 #stock = myTable[2]
 #myTable[2] = myTable[4]
-#myTable.pop(4)
-#myTable.insert(4,stock)
+#myTable[4] = stock
 
 #print(myTable)
 
@@ -21,11 +20,11 @@ print(myTable)
 comparateur = 999
 
 for j in range (0, len(myTable)):
-        if (myTable[j]>myTable[j+1]):
-            stock = myTable[j]
-            
-            myTable[j+1] = myTable[j]
-            myTable.pop(j+1)
-            myTable.insert(j+1,stock)
+    for k in range(j, len(myTable)):
+        if (myTable[j]>myTable[k]):
+            stock = myTable[k]
+            myTable[k] = myTable[j]
+            myTable[j] = stock
+
 
 print(myTable)
