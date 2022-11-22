@@ -154,7 +154,7 @@ while (findujeu==False):
                 else:
                     print("Case déja occupée")
         
-        if L1valeur[0]==L2valeur[1]==L3valeur[2] or L1valeur[0]==L2valeur[0]==L3valeur[0] or L1valeur[0]==L1valeur[1]==L1valeur[2] or L1valeur[2]==L2valeur[2]==L3valeur[2] or  L1valeur[1]==L2valeur[1]==L3valeur[1] or L2valeur[0]==L2valeur[1]==L2valeur[2] or L3valeur[0]==L3valeur[1]==L3valeur[2] or L3valeur[0]==L2valeur[1]==L1valeur[2]:
+        if L1valeur[0]==L2valeur[1]==L3valeur[2] or L1valeur[0]==L2valeur[0]==L3valeur[0] or L1valeur[0]==L1valeur[1]==L1valeur[2] or L1valeur[2]==L2valeur[2]==L3valeur[2] or  L1valeur[1]==L2valeur[1]==L3valeur[1] or L2valeur[0]==L2valeur[1]==L2valeur[2] or L3valeur[0]==L3valeur[1]==L3valeur[2] or L3valeur[0]==L2valeur[1]==L1valeur[2]:  #Devrait vérifier les condition de victoire et briser le while, mais ne fonctionne pas
             findujeu=True
             
         input()
